@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/style.css" />
+  <title>Easy send Archieve</title>
+</head>
+
+<body class="">
+  <!-- Upper grey line -->
+  <div class="bg-gray-800 w-full h-2"></div>
+  <main class="">
+    <!-- Header -->
+    <header class="px-4 py-6 flex md:items-center lg:items-start md:justify-between w-full h-36 relative">
+      <!-- Logo -->
+      <div class="hidden md:flex w-1/2">
+        <img src="./public/imgs/logo.png" alt="Logo" class="md:h-[64.5px]" />
+      </div>
+      <div class="flex md:hidden w-1/2">
+        <img src="./public/imgs/Logo-small.png" alt="Logo" class="h-[45px]" />
+      </div>
+
+      <!-- Navbar -->
+      <nav class="hidden w-1/2 lg:flex items-center justify-end z-10">
+        <ul class="uppercase flex items-center">
+          <li class="mr-6 cursor-pointer font-semibold text-sm lg:text-white">
+            <a href="index.html"> home </a>
+          </li>
+          <li class="mr-6 cursor-pointer font-semibold text-sm lg:text-white">
+            <a href="about.html"> about </a>
+          </li>
+          <li
+            class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent">
+            <a href="login.html"> login </a>
+          </li>
+          <li
+            class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent">
+            <a href="document-data.html"> Documents </a>
+          </li>
+          <li
+            class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent">
+            <a href="search-data.html"> Search </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Menu decore -->
+      <div class="hidden lg:flex absolute top-0 right-3">
+        <img src="./public/imgs/menu-back.png" alt="" />
+      </div>
+    </header>
+    <!-- Home body -->
+    <section class="w-full relative grid grid-cols-1 place-content-center md:grid-cols-2 px-4 mt-4 md:mt-12 md:gap-4">
+      <!-- Left red decore -->
+      <img src="./public/imgs/main-decore.png" alt="" class="hidden md:block md:absolute -top-1 left-0 -z-10" />
+      <!-- Body data -->
+      <!-- Left text -->
+      <div class="md:pl-28 flex flex-col items-center justify-center gap-8">
+        <!-- First row left text -->
+        <p class="text-sm sm:text-lg mb-4 text-justify">
+          Easysend Archive sub-system in Damietta branch is divart of the Easy
+          Send system for managing the branch and communircating with the
+          affiliated missions and the central computer administration in
+          Cairo.
+        </p>
+        <hr>
+        <p class="text-sm sm:text-lg text-justify">
+          This sub-system contributes to the ease of saving and retrieval of
+          the documents that are photocopied in the branch, as they will be
+          grouped and indexed in one place and classified by type and date of
+          imaging, which helps in the ease of retrieval when needed.
+        </p>
+        <!-- Red title after left text  -->
+        <p class="my-4 text-primary text-lg font-semibold">
+          The system is designed and developed in the IT sector of Damietta
+          Branch
+        </p>
+
+        <div class="w-full flex items-center justify-center py-4 gap-4">
+          <div class="flex flex-col items-center justify-center mx-1">
+            <img src="./public/imgs/quick-icon.png" alt="Quick" srcset="" class="w-16 h-16 sm:w-24 sm:h-24" />
+            <h2 class="text-sm text-black font-semibold">Quick</h2>
+          </div>
+          <div class="flex flex-col items-center justify-center mx-1">
+            <img src="./public/imgs/simple-icon.png" alt="Quick" srcset="" class="w-16 h-16 sm:w-24 sm:h-24" />
+            <h2 class="text-sm text-black font-semibold">Simple</h2>
+          </div>
+          <div class="flex flex-col items-center justify-center mx-1">
+            <img src="./public/imgs/easy-icon.png" alt="Quick" srcset="" class="w-16 h-16 sm:w-24 sm:h-24" />
+            <h2 class="text-sm text-black font-semibold">Easy</h2>
+          </div>
+        </div>
+      </div>
+      <!-- First row rigt image -->
+      <div class="h-auto flex flex-col items-center justify-center row-auto order-first md:order-2">
+        <img src="./public/imgs/home-illustrator.png" alt="" srcset="" />
+
+        <div class="w-full md:px-16 flex items-center justify-start">
+          <p class="my-4 text-primary text-xl font-semibold">System features</p>
+        </div>
+        <p class="text-sm text-justify sm:text-lg md:px-16 mb-4 md:mb-0 lg:pr-24">
+          The subsystem for archiving photographed documents in the branch is
+          characterized by three main advantages: ease, simplicity and speed,
+          where you can through simple steps photograph the required document
+          and then specify some data such as the type of document and the
+          purpose of its photocopying.
+          <hr class="bg-red-700" />
+        </p>
+      </div>
+    </section>
+
+
+  </main>
+  <!--  Footer -->
+  <section class="w-full  flex items-center justify-end mt-8">
+    <!-- Middle and right decore -->
+    <div class="hidden relative lg:flex lg:items-center lg:justify-center w-full  h-12">
+      <img src="./public/imgs/footer-right-decore.png" alt="" class="absolute bottom-0 right-0">
+      <img src="./public/imgs/footer-decore.png" alt="" class="absolute bottom-0 left-[10%]">
+      <p class="text-lg">&copy; All rights reserved 2023</p>
+    </div>
+
+  </section>
+  <!-- Footer with small and middle screens -->
+  <section class="bg-primary h-16 mt-8 flex items-center justify-center lg:hidden">
+    <p class="text-white text-sm ">&copy; Allright reserved 2023</p>
+  </section>
+</body>
+
+</html>

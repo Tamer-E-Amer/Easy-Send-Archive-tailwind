@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>Easy send Archieve:Login</title>
+  </head>
+
+  <body class="h-screen relative">
+    <!-- Upper grey line -->
+    <div class="bg-gray-800 w-full h-2"></div>
+    <main class="">
+      <!-- Header -->
+      <header
+        class="px-4 py-6 flex md:items-center lg:items-start md:justify-between w-full h-36 relative"
+      >
+        <!-- Logo -->
+        <div class="hidden md:flex w-1/2">
+          <img src="./public/imgs/logo.png" alt="Logo" class="md:h-[64.5px]" />
+        </div>
+        <div class="flex md:hidden w-1/2">
+          <img src="./public/imgs/Logo-small.png" alt="Logo" class="h-[45px]" />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="hidden w-1/2 lg:flex items-center justify-end z-10">
+          <ul class="uppercase flex items-center">
+            <li class="mr-6 cursor-pointer font-semibold text-sm lg:text-white">
+              <a href="index.html"> home </a>
+            </li>
+            <li class="mr-6 cursor-pointer font-semibold text-sm lg:text-white">
+              <a href="about.html"> about </a>
+            </li>
+            <li
+              class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent"
+            >
+              <a href="login.html"> login </a>
+            </li>
+            <li
+              class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent"
+            >
+              <a href="document-data.html"> Documents </a>
+            </li>
+            <li
+              class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent"
+            >
+              <a href="search-data.html"> Search </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Menu decore -->
+        <div class="hidden lg:flex absolute top-0 right-3">
+          <img src="./public/imgs/menu-back.png" alt="" />
+        </div>
+      </header>
+      <!-- Login body -->
+      <section
+        class="flex items-center justify-center w-full h-[calc(100vh-300px)]"
+      >
+        <div
+          class="flex items-center justify-center border-[1px] border-secondary rounded-3xl shadow-md w-5/6 sm:w-2/3 bg-white z-10 relative"
+        >
+          <img
+            src="./public/imgs/avatar.png"
+            alt="avatar"
+            class="absolute -top-8 sm:-top-12 left-['50%'] w-16 h-16 sm:w-24 sm:h-24"
+          />
+          <!--  Login form -->
+          <form
+            action=""
+            class="w-full md:w-3/4 px-8 flex flex-col items-center justify-center space-y-4 py-16"
+          >
+            <!-- User name -->
+            <div class="flex items-start flex-col sm:flex-row w-full">
+              <label
+                for=""
+                class="w-36 mb-2 md:mb-0 text-sm text-gray-900 font-semibold"
+                >User name</label
+              >
+              <input
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="Enter your user name"
+                class="input-field"
+              />
+            </div>
+            <!-- Password -->
+            <div class="flex items-start flex-col sm:flex-row w-full">
+              <label
+                for=""
+                class="w-36 mb-2 md:mb-0 text-sm text-gray-900 font-semibold"
+                >Password</label
+              >
+              <input
+                type="password"
+                name="userName"
+                id="userName"
+                placeholder="Enter your password"
+                class="input-field"
+              />
+            </div>
+            <!-- Remember me -->
+            <div class="flex items-center sm:flex-row w-full">
+              <label for="" class="hidden sm:block w-36"></label>
+              <div class="w-full pl-2">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  id="rememberMe"
+                  class="mr-2 text-red-800 focus:ring-red-800"
+                />
+                <label
+                  for="rememberMe"
+                  class="w-36 md:mb-0 text-sm text-gray-900 font-semibold hover:cursor-pointer"
+                  >Remember me</label
+                >
+              </div>
+            </div>
+            <!-- Login button -->
+            <div class="flex items-center sm:flex-row w-full">
+              <label for="" class="hidden sm:block w-36"></label>
+
+              <button
+                class="rounded-ful py-2 px-6 bg-red-800 text-sm font-semibold rounded-full text-white w-full hover:bg-slate-700 transition-all duration-300 shadow-md"
+              >
+                Login
+              </button>
+            </div>
+            <!-- Dont have an account -->
+            <div class="flex items-center sm:flex-row w-full">
+              <label for="" class="hidden sm:block w-36"></label>
+              <!-- <button
+                class="rounded-ful py-2 px-6 bg-red-800 text-sm font-semibold rounded-full text-white w-full hover:bg-slate-700 transition-all duration-300 shadow-md"
+              >
+                Login
+              </button> -->
+              <span
+                class="text-sm text-red-800 inline-block font-semibold w-full pl-2"
+              >
+                <a href="register.html"> I dont have an account </a>
+              </span>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--  Footer -->
+      <section
+        class="w-full absolute bottom-0 flex items-center justify-end mt-8"
+      >
+        <!-- Middle and right decore -->
+        <div
+          class="hidden relative lg:flex lg:items-center lg:justify-center w-full h-12 overflow-x-clip"
+        >
+          <img
+            src="./public/imgs/footer-right-decore.png"
+            alt=""
+            class="absolute bottom-0 -right-10"
+          />
+          <img
+            src="./public/imgs/footer-decore.png"
+            alt=""
+            class="absolute bottom-0 left-[10%]"
+          />
+          <p class="text-lg">&copy; All rights reserved 2023</p>
+        </div>
+      </section>
+      <!-- Footer with small and middle screens -->
+      <section
+        class="bg-primary h-16 mt-8 flex items-center justify-center lg:hidden absolute bottom-0 w-full"
+      >
+        <p class="text-white text-sm">&copy; Allright reserved 2023</p>
+      </section>
+    </main>
+  </body>
+</html>

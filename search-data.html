@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <title>Easy send Archieve:Search data</title>
+  </head>
+
+  <body class="">
+    <!-- Upper grey line -->
+    <div class="bg-gray-800 w-full h-2"></div>
+    <main class="">
+      <!-- Header -->
+      <header
+        class="px-4 py-6 flex md:items-center lg:items-start md:justify-between w-full h-36 relative"
+      >
+        <!-- Logo -->
+        <div class="hidden md:flex w-1/2">
+          <img src="./public/imgs/logo.png" alt="Logo" class="md:h-[64.5px]" />
+        </div>
+        <div class="flex md:hidden w-1/2">
+          <img src="./public/imgs/Logo-small.png" alt="Logo" class="h-[45px]" />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="hidden w-1/2 lg:flex items-center justify-end z-10">
+          <ul class="uppercase flex items-center">
+            <li class="mr-6 cursor-pointer font-semibold text-sm lg:text-white">
+              <a href="index.html"> home </a>
+            </li>
+            <li class="mr-6 cursor-pointer font-semibold text-sm lg:text-white">
+              <a href="about.html"> about </a>
+            </li>
+            <li
+              class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent"
+            >
+              <a href="login.html"> login </a>
+            </li>
+            <li
+              class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent"
+            >
+              <a href="document-data.html"> Documents </a>
+            </li>
+            <li
+              class="mr-6 py-2 cursor-pointer font-semibold border-y-2 border-y-red-800 text-sm lg:text-white lg:border-y-transparent"
+            >
+              <a href="search-data.html"> Search </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Menu decore -->
+        <div class="hidden lg:flex absolute top-0 right-3">
+          <img src="./public/imgs/menu-back.png" alt="" />
+        </div>
+      </header>
+      <!-- Document search form -->
+      <section class="flex items-center justify-center w-full relative">
+        <img
+          src="./public/imgs/main-decore.png"
+          alt=""
+          class="absolute top-24 left-0 -z-10"
+        />
+        <div
+          class="flex items-center justify-center border-[1px] bg-white border-secondary rounded-3xl shadow-md w-5/6"
+        >
+          <!--  Document register form -->
+          <form
+            class="w-full px-4 md:px-16 grid grid-col-1 lg:grid-cols-2 gap-4 py-8 md:py-16"
+          >
+            <!-- Document title -->
+            <div class="flex items-start flex-col sm:flex-row w-full">
+              <label
+                for=""
+                class="w-48 mb-2 md:mb-0 text-sm text-gray-900 font-semibold text-left pl-2 md:text-right md:pr-4"
+                >Document title</label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Enter document title"
+                class="input-field"
+              />
+            </div>
+            <!-- Office -->
+            <div class="flex items-start flex-col sm:flex-row w-full">
+              <label
+                for=""
+                class="w-48 mb-2 md:mb-0 text-sm text-gray-900 font-semibold text-left pl-2 md:text-right md:pr-4"
+                >Office</label
+              >
+              <select
+                name="office"
+                id="office"
+                class="appearance-none input-field hover:cursor-pointer"
+              >
+                <option value="1">Central managament</option>
+                <option value="2" class="">Damietta branch</option>
+                <option value="3">Damietta region</option>
+                <option value="4">Damietta 078</option>
+              </select>
+            </div>
+
+            <!-- From date -->
+            <div class="flex items-start flex-col sm:flex-row w-full">
+              <label
+                for=""
+                class="w-48 mb-2 md:mb-0 text-sm text-gray-900 font-semibold text-left pl-2 md:text-right md:pr-4"
+                >From</label
+              >
+              <input
+                type="date"
+                name="fromDate"
+                id="fromDate"
+                class="input-field cursor-pointer"
+              />
+            </div>
+            <!-- To date -->
+            <div class="flex items-start flex-col sm:flex-row w-full">
+              <label
+                for=""
+                class="w-48 mb-2 md:mb-0 text-sm text-gray-900 font-semibold text-left pl-2 md:text-right md:pr-4"
+                >To</label
+              >
+              <input
+                type="date"
+                name="toDate"
+                id="toDate"
+                class="input-field cursor-pointer"
+              />
+            </div>
+            <!-- Search button -->
+            <div class="flex items-center sm:flex-row w-full">
+              <label for="" class="hidden sm:block w-48"></label>
+              <button
+                class="rounded-ful py-2 px-6 bg-red-800 text-sm font-semibold rounded-full text-white w-full hover:bg-slate-700 transition-all duration-300 shadow-md"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Scroll hint -->
+      <div class="mt-4 flex items-center justify-center md:hidden">
+        <span class="text-sm text-red-800 font-semibold">
+          Scroll to left to see rest data table
+        </span>
+      </div>
+      <!-- Table of registered documents -->
+      <section class="mt-4 flex items-center justify-center w-full">
+        <div
+          class="border-[1px] bg-white border-secondary rounded-3xl shadow-md w-5/6 overflow-auto"
+        >
+          <table class="w-full">
+            <!-- Table header -->
+            <thead class="bg-gray-400">
+              <tr>
+                <th class="w-24 table-hd">Document title</th>
+                <th class="w-24 table-hd">Office</th>
+                <th class="w-24 table-hd">Created at</th>
+                <th class="w-24 table-hd">Created by</th>
+              </tr>
+            </thead>
+            <!-- Table body -->
+            <tbody class="divide-y divide-gray-300">
+              <tr class="bg-white table-row">
+                <td class="w-24 table-td">Document1</td>
+                <td class="table-td">Central management</td>
+                <td class="table-td">Metwally Hussiny</td>
+                <td class="table-td">22-12-2022</td>
+              </tr>
+              <tr class="bg-gray-200 table-row">
+                <td class="w-24 table-td">Document 1Document 1Document 1</td>
+                <td class="table-td">Central management</td>
+                <td class="table-td">Tamer Amer</td>
+                <td class="table-td">22-12-2022</td>
+              </tr>
+
+              <tr class="bg-white table-row">
+                <td class="w-24 table-td">Document 4Document 4Document 4</td>
+                <td class="table-td">Central management</td>
+                <td class="table-td">Tamer Amer</td>
+                <td class="table-td">22-12-2022</td>
+              </tr>
+              <tr class="bg-gray-200 table-row">
+                <td class="w-24 table-td">Document 3</td>
+                <td class="table-td">Central management</td>
+                <td class="table-td">Tamer Amer</td>
+                <td class="table-td">22-12-2022</td>
+              </tr>
+              <tr class="bg-whit table-row">
+                <td class="w-24 table-td">Document 3</td>
+                <td class="table-td">Central management</td>
+                <td class="table-td">Tamer Amer</td>
+                <td class="table-td">22-12-2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <!--  Footer -->
+    <section class="w-full flex items-center justify-end mt-8">
+      <!-- Middle and right decore -->
+      <div
+        class="hidden relative lg:flex lg:items-center lg:justify-center w-full h-12"
+      >
+        <img
+          src="./public/imgs/footer-right-decore.png"
+          alt=""
+          class="absolute bottom-0 right-0"
+        />
+        <img
+          src="./public/imgs/footer-decore.png"
+          alt=""
+          class="absolute bottom-0 left-[10%]"
+        />
+        <p class="text-lg">&copy; All rights reserved 2023</p>
+      </div>
+    </section>
+    <!-- Footer with small and middle screens -->
+    <section
+      class="bg-primary h-16 mt-8 flex items-center justify-center lg:hidden"
+    >
+      <p class="text-white text-sm">&copy; Allright reserved 2023</p>
+    </section>
+  </body>
+</html>
